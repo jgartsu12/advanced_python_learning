@@ -6,7 +6,7 @@ class Html:
     def __init__(self, content):
         self.content = content
 
-    def render(self): # abstract class abstract class - sole purpose = holding and storing shared beh only child classes call this class
+    def render(self): # abstract class - sole purpose = holding and storing shared beh only child classes call this class
         raise NotImplementedError('Subclass must implement render method')  # never call html class - common conv when using very complex sys - pattern vreate class that u dont want end user to connect with but create abstract class 
 
 class Heading(Html):
@@ -25,7 +25,7 @@ tags = [
 ]
 
 for tag in tags:
-    print(str(tag) + ': ' + tag.render())
+    print(str(tag) + ': ' + tag.render()) # debugger use
     # => 
         # <__main__.Div object at 0x00000226E2F47508>: <div>some content</div>
         # <__main__.Heading object at 0x00000226E2F47588>: <h1>Some big heading</h1>
