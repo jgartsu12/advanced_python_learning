@@ -26,7 +26,7 @@ tags = [
 
 for tag in tags:
     print(str(tag) + ': ' + tag.render()) # debugger use
-    # => 
+    # => no reference to parent class just child classes: 
         # <__main__.Div object at 0x00000226E2F47508>: <div>some content</div>
         # <__main__.Heading object at 0x00000226E2F47588>: <h1>Some big heading</h1>
         # <__main__.Div object at 0x00000226E2F47608>: <div>another div</div>
