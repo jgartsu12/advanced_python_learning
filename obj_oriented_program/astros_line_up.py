@@ -1,5 +1,5 @@
 # How to Build a Custom Iterator Class in Python
-class Lineup:
+class Lineup: # infinite lineup
     def __init__(self, players):
         self.players = players
 
